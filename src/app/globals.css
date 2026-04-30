@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0b0c10;
+  --foreground: #f6f7fb;
+  --muted: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.10);
+  --card: rgba(255, 255, 255, 0.03);
+  --popover: rgba(16, 18, 24, 0.92);
+  --ring: rgba(255, 255, 255, 0.35);
+  --accent: #7c3aed;
+  --accent2: #22d3ee;
+}
+
+.dark {
+  --background: #0b0c10;
+  --foreground: #f6f7fb;
+  --muted: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.10);
+  --card: rgba(255, 255, 255, 0.03);
+  --popover: rgba(16, 18, 24, 0.92);
+  --ring: rgba(255, 255, 255, 0.35);
+  --accent: #7c3aed;
+  --accent2: #22d3ee;
+}
+
+:root:not(.dark) {
+  --background: #ffffff;
+  --foreground: #0b0c10;
+  --muted: rgba(15, 18, 28, 0.05);
+  --border: rgba(15, 18, 28, 0.10);
+  --card: rgba(15, 18, 28, 0.03);
+  --popover: rgba(255, 255, 255, 0.92);
+  --ring: rgba(15, 18, 28, 0.28);
+  --accent: #7c3aed;
+  --accent2: #22d3ee;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}

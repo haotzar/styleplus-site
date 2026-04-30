@@ -2,6 +2,10 @@ import { SiteHeader } from "@/components/site-header";
 
 type Lang = "he" | "en";
 
+export function generateStaticParams() {
+  return [{ lang: "he" }, { lang: "en" }];
+}
+
 export default async function LangLayout({
   children,
   params,

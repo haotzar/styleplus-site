@@ -7,14 +7,14 @@ export default async function LangLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ lang: Lang }>;
+  params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
   const isEnglish = lang === "en";
 
   return (
     <div dir={isEnglish ? "ltr" : "rtl"} className="min-h-dvh">
-      <SiteHeader lang={lang} />
+      <SiteHeader lang={lang as Lang} />
       {children}
     </div>
   );
